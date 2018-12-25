@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
           newHash[elem] = {:color => [], :gender => [], :lives => []}
         end
         if nameArr.include?(elem)
-          newHash[elem][keyType].push(atrKey)
+          newHash[elem][keyType].push(atrKey.to_s)
         end
       }
     }
