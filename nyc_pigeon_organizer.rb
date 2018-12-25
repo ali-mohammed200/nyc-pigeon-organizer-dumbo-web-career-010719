@@ -20,15 +20,15 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
   write your code here!
   newHash = {}
-  data.each_char { |keyType, valObj|
-    valObj.each { |atrKey, nameArr|
-      nameArr.each { |elem|
-        if !newHash.has_key?(elem)
-          newHash[elem] = {}
-        end
-      }
-    }
-  }
+  # data.each_char { |keyType, valObj|
+  #   valObj.each { |atrKey, nameArr|
+  #     nameArr.each { |elem|
+  #       if !newHash.has_key?(elem)
+  #         newHash[elem] = {}
+  #       end
+  #     }
+  #   }
+  # }
   puts newHash
 end
 nyc_pigeon_organizer(pigeon_data)
