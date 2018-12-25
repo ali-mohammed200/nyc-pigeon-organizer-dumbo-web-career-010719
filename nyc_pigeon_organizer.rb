@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
     valObj.each { |atrKey, nameArr|
       nameArr.each { |elem|
         if !newHash.has_key?(elem)
-          newHash[elem] = {keyType => {}}
+          newHash[elem] = {:color => {}, :gender => {}, :lives => {}}
         end
       }
     }
