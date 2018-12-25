@@ -19,7 +19,7 @@ pigeon_data = {
 
 def nyc_pigeon_organizer(data)
   newHash = {}
-  data.each_char { |keyType, valObj|
+  data.each { |keyType, valObj|
     valObj.each { |atrKey, nameArr|
       nameArr.each { |elem|
         if !newHash.has_key?(elem)
