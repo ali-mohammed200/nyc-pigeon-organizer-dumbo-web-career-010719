@@ -36,6 +36,10 @@ pigeon_data = {
 # end
 
 def nyc_pigeon_organizer(data)
+  # !!!!!! ||= is a conditional assignment operator. If the value is nil it
+  # !!!!!! shall be assigned. Else it will be kept as is.
+  # !!!!!! &&= is a conditional assigment operator. If the value is not nil
+  # !!!!!! aka the value exists, then it shall be assigned.
   newHash = {}
   data.each { |keyType, valObj|
     valObj.each { |atrKey, nameArr|
